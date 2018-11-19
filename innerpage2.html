@@ -1,0 +1,410 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Grocery Basket</title>
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/font-awesome.min.css" rel="stylesheet">
+      <link href="css/owl.carousel.min.css" rel="stylesheet">
+      <link href="css/owl.theme.default.min.css" rel="stylesheet">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+      <script>
+         $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+         
+                autoPlay: true, //Set AutoPlay to 3 seconds
+                dots: false,
+                items: 3,
+                nav:true,
+                margin:10,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 1],
+                responsive : {
+                  0 : {
+                      items: 1
+                  },
+                  768 : {
+                      items: 3
+                  },
+                  960 : {
+                      items: 4
+                  }
+                    }
+            });
+         });
+      </script>
+      <script>
+         $(document).ready(function () {
+            $("#owl-demo2").owlCarousel({
+         
+                autoPlay: true, //Set AutoPlay to 3 seconds
+                dots: false,
+                items: 3,
+                nav:true,
+                margin:10,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 1],
+                responsive : {
+                  0 : {
+                      items: 1
+                  },
+                  768 : {
+                      items: 3
+                  },
+                  960 : {
+                      items: 4
+                  }
+                    }
+            });
+         });
+      </script>
+	  <script>
+         $(document).ready(function () {
+            $("#owl-demo3").owlCarousel({
+         
+                autoPlay: true, //Set AutoPlay to 3 seconds
+                dots: false,
+                items: 3,
+                nav:true,
+                margin:10,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [979, 1],
+                responsive : {
+                  0 : {
+                      items: 1
+                  },
+                  768 : {
+                      items: 1
+                  },
+                  960 : {
+                      items: 1
+                  }
+                    }
+            });
+         });
+      </script>
+	  
+
+	  <script>
+
+var modal = document.getElementById('myModal2');
+
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+   </head>
+   <body>
+      <!--header top-->
+      <div class="header-top">
+         <div class="container">
+            <div class="callToAction">
+               <ul class="list-inline pull-right">
+                  <li><i class="fa fa-volume-control-phone" aria-hidden="true"></i>1234 123 0000</li>
+                  <li class="dropdown">
+                     <i class="fa fa-map-marker" aria-hidden="true"></i> <a href="#" data-toggle="dropdown">CHENNAI<span class="glyphicon glyphicon-menu-down"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">BANGLORE</a></li>
+                        <li><a href="#">DELHI</a></li>
+                        <li><a href="#">MUMBAI</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#" data-toggle="modal" data-target="#myModal">Login   </a></li>
+                  <li> |</li>
+                  <li><a href="#" data-toggle="modal" data-target="#signup">Signup</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--header top-->
+      <!--myModal-->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 loginl">
+                     <h4>Login</h4>
+                     <p>Get access to your orders, wishlists and more</p>
+                     <img src="images/signin.png" class="img-responsive" alt="pic">
+                  </div>
+                  <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                     <form>
+                        <div class="form-group">
+                           <label for="exampleInputEmail1"></label>
+                           <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleInputPassword1"></label>
+                           <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Password">
+                        </div>
+                     </form>
+                     <p><a href="#">Forgot your password?</a></p>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Login</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--myModal-->
+      <!--signup-->
+      <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Login</h4>
+               </div>
+               <div class="modal-body">
+                  <form>
+                     <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" >
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleInputPassword1">Confirm Password</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                     </div>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Sign Up</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--signup-->
+      <!--header middle-->
+      <div class="header-middle">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                  <a href="#"><img src="images/logo.png" class="img-responsive" alt="logo"></a>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="input-group">
+                     <input type="text" class="form-control"  aria-describedby="basic-addon1">
+                     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                  <div class="media">
+                     <div class="media-left">
+                        <a href="#">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </a>
+                     </div>
+                     <div class="media-body">
+                        <ul>
+                           <li>My Cart</li>
+                           <li>0 Items</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--header middle-->
+      <!--header bottom-->
+      <nav class="navbar navbar-default">
+         <div class="container">
+            <div class="inside">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                     <li class="active dropdown">
+                        <a href="#" data-toggle="dropdown">SHOP BY CATEGORY<span class="glyphicon glyphicon-menu-down"></span></a>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Action</a></li>
+                           <li><a href="#">Another action</a></li>
+                           <li><a href="#">Something else here</a></li>
+                           <li role="separator" class="divider"></li>
+                           <li><a href="#">Separated link</a></li>
+                           <li role="separator" class="divider"></li>
+                           <li><a href="#">One more separated link</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#"><span class="glyphicon glyphicon-tag"></span>OFFERS</a></li>
+                     <li><a href="#"><span class="glyphicon glyphicon-user"></span>ABOUT US</a></li>
+                     <li><a href="faq.html"><i class="fa fa-comment" aria-hidden="true"></i>FAQ</a></li>
+                     <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>CONTACT US</a></li>
+                  </ul>
+               </div>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+      <!--header-bottom-->
+
+
+	<div class="currentloc">
+	<div class="container">
+	<ol class="breadcrumb">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Shop By Categories</a></li>
+	<li class="active">D</li>
+</ol>
+	</div>
+	</div>
+	
+<div class="mdal">
+<div class="container">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bneed">
+<img id="myImg" src="images/p1.png" alt="Snow">
+
+
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div class="upperr">
+<h1>TATA Masoor Dal</h1>
+<a><p>Be the first to review this product</p></a>
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<h3>INR 56.00</h3>
+</div>
+<ul class="pull-right">
+<li><b>IN STOCK</b></li>
+<li> SKU#: grocery923</li>
+</ul>
+</div>
+</div>
+
+<div class="bottomr">
+ <div class="input-group">
+                     <input type="text" class="form-control"  aria-describedby="basic-addon1">
+                     <span class="input-group-addon" id="basic-addon1">CHECK</span>
+                  </div>
+				  <div class="quan">
+				  <ul class="list-inline">
+				<li>QTY  </li>
+				<li><input type="text" class="form-control" ></li>
+				<li> <a href="#" class="btn btn-default" role="button">Add to Cart</a></li>
+				</ul>
+</div>
+<p>Double silky, sorted rice. It is extremely sweet-smelling and due to its smell, it is measured to be of greater quality. It is simple to digest and sortexed dirt free quality, broken under 2%, moisture 14% max; it is believed to be of greater quality.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="det">
+<div class="container">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Details</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">More Information</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home"><p>double silky, sorted rice. It is extremely sweet-smelling and due to its smell, it is measured to be of greater quality. It is simple to digest and sortexed dirt free quality, broken under 2%, moisture 14% max; it is believed to be of greater quality.</p></div>
+    <div role="tabpanel" class="tab-pane" id="profile"><p>numbers         N/A<br>Available for Auction   No<br></p></div>
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  </div>
+
+</div>
+</div>
+<!-- The Modal -->
+<div id="myModal2" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content2" id="img01">
+  <div id="caption"></div>
+</div>
+	  
+	  <div class="about">
+	  <div class="container">
+	  <div class="describe">
+	  <h3>About Grocery Basket</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan sit amet nulla facilisi morbi. Sem nulla pharetra diam sit. Molestie a iaculis at erat pellentesque adipiscing commodo elit at. Sagittis aliquam malesuada bibendum arcu vitae elementum. Iaculis nunc sed augue lacus viverra vitae. Aliquam vestibulum morbi blandit cursus risus at ultrices. Curabitur vitae nunc sed velit dignissim sodales ut. Nulla facilisi etiam dignissim diam. Adipiscing elit ut aliquam purus sit amet luctus. Massa ultricies mi quis hendrerit dolor. Pellentesque habitant morbi tristique senectus et netus. Fames ac turpis egestas maecenas. Dui vivamus arcu felis bibendum. Habitant morbi tristique senectus et. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Et ligula ullamcorper malesuada proin libero nunc consequat interdum. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Dui vivamus arcu felis bibendum.</p>
+	  </div>
+	  </div>
+	  </div>
+	  <div class="footer">
+	  <div class="container">
+	  <div class="row">
+	  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+	  <h4>Top Categories</h4>
+	  </div>
+	  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan sit amet nulla facilisi morbi. Sem nulla pharetra diam sit.</p>
+	  </div>
+	  </div>
+	  	  <div class="row">
+	  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+	  <h4>Payement Options</h4>
+	  </div>
+	  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+	  <ul class="list-inline">
+		<li><img src="images/visa.png" class="img-responsive"></li>
+		<li><img src="images/master.png" class="img-responsive"></li>
+		<li><img src="images/amex.png" class="img-responsive"></li>
+		<li><img src="images/discover.png" class="img-responsive"></li>
+		<li><img src="images/pp.png" class="img-responsive"></li>
+		</ul>
+	  </div>
+	  </div>
+	  	  <div class="row">
+	  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+	  <h4>Social Media</h4>
+	  </div>
+	  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 social">
+	  <ul class="list-inline">
+		<li><a href="#"><img src="images/instagram.png" class="img-responsive"></a></li>
+		<li><a href="#"><img src="images/facebook(1).png" class="img-responsive"></a></li>
+		<li><a href="#"><img src="images/youtube.png" class="img-responsive"></a></li>
+		<li><a href="#"><img src="images/twitter.png" class="img-responsive"></a></li>
+	
+		</ul>
+	  </div>
+	  </div>
+	  </div>
+	  
+	  <div class="footer-bottom">
+	  <div class="container">
+	  <p>Copyright<span class="glyphicon glyphicon-copyright-mark"></span> 2011-2017 Grocery Basket.All Rights Reserved.
+	  </div>
+	  </div>
+   </body>
+</html>
+
