@@ -5,5 +5,5 @@ function onAddClick(){
 }
 
 function onAddClick() {
-    document.getElementById("masoordal").style.visibility = "hidden";
+    document.getElementById("masoordal").style.display = "inline";
 }
