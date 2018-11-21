@@ -127,39 +127,7 @@
             </div>
          </div>
       </div>
-      <!--header top-->
-      <!--myModal-->
-      <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> -->
-         <!-- <div class="modal-dialog" role="document"> -->
-            <!-- <div class="modal-content"> -->
-               <!-- <div class="modal-body"> -->
-                  <!-- <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 loginl"> -->
-                     <!-- <h4>Login</h4> -->
-                     <!-- <p>Get access to your orders, wishlists and more</p> -->
-                     <!-- <img src="images/signin.png" class="img-responsive" alt="pic"> -->
-                  <!-- </div> -->
-                  <!-- <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12"> -->
-                     <!-- <form> -->
-                        <!-- <div class="form-group"> -->
-                           <!-- <label for="exampleInputEmail1"></label> -->
-                           <!-- <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> -->
-                        <!-- </div> -->
-                        <!-- <div class="form-group"> -->
-                           <!-- <label for="exampleInputPassword1"></label> -->
-                           <!-- <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Password"> -->
-                        <!-- </div> -->
-                     <!-- </form> -->
-                     <!-- <p><a href="#">Forgot your password?</a></p> -->
-                  <!-- </div> -->
-               <!-- </div> -->
-               <!-- <div class="modal-footer"> -->
-                  <!-- <button type="button" class="btn btn-primary">Login</button> -->
-               <!-- </div> -->
-            <!-- </div> -->
-         <!-- </div> -->
-      <!-- </div> -->
-      <!--myModal-->
-      <!--signup-->
+
       <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
          <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -210,11 +178,10 @@
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </a>
                      </div>
-                     <div class="media-body" id="addToCart">
+                     <div class="media-body">
                         <ul>
                            <li>My Cart</li>
-                           <p type="text" value="0" id="addToCart"></p>
-                           
+                           <li><p id = "addToCart">items</p></li>
                         </ul>
                      </div>
                   </div>
@@ -389,7 +356,7 @@
                            <span class="input-group-addon">QTY</span>
                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="1">
                         </div>
-                        <button class="btn btn-danger" type="button" onclick="onAddClick()"><span class="glyphicon glyphicon-shopping-cart"></span>ADD</button>
+                        <a href="#" class="btn btn-default" role="button"id="addToCart" onclick="onAddClick()"><span class="glyphicon glyphicon-shopping-cart"></span>ADD</a></p>
                      </div>
                   </div>
                </div>
