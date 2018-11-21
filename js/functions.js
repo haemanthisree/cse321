@@ -3,3 +3,7 @@ function onAddClick(){
     document.getElementById('addToCart').innerHTML = ++i;
     
 }
+
+function onAddClick() {
+    document.getElementById("masoordal").style.visibility = "hidden";
+}
