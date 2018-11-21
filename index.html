@@ -210,10 +210,11 @@
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </a>
                      </div>
-                     <div class="media-body">
+                     <div class="media-body" id="addToCart">
                         <ul>
                            <li>My Cart</li>
-                           <li>items</li>
+                           <p type="text" value="0" id="addToCart"></p>
+                           
                         </ul>
                      </div>
                   </div>
@@ -388,7 +389,7 @@
                            <span class="input-group-addon">QTY</span>
                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="1">
                         </div>
-                        <a href="#" class="btn btn-default" role="button"id="addToCart" onclick="onAddClick()"><span class="glyphicon glyphicon-shopping-cart"></span>ADD</a></p>
+                        <button class="btn btn-danger" type="button" onclick="onAddClick()"><span class="glyphicon glyphicon-shopping-cart"></span>ADD</button>
                      </div>
                   </div>
                </div>
